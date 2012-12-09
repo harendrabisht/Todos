@@ -1,0 +1,290 @@
+.header {
+  width: 90%;
+  height: 50px;
+  margin: auto;
+  background: url("images/header.png") repeat;
+  border-radius: 0 0 10px 10px;
+  border: 1px solid #cecece; }
+
+.header-icon {
+  float: left;
+  width: 100px;
+  height: 50px;
+  background-image: url(images/todo.png);
+  background-repeat: no-repeat; }
+
+.header-exzeo {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  left: 50%;
+  background-image: url(images/top_bar_logo.png);
+  background-repeat: no-repeat; }
+
+.header-right {
+  width: 250px;
+  height: 50px;
+  right: 0px;
+  position: absolute; }
+
+.header-name {
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #b3810d; }
+
+.left {
+  width: 230px;
+  float: left;
+  margin-top: 50px; }
+
+.left-panel {
+  width: 90%;
+  margin: auto;
+  border-radius: 5px;
+  background-color: none;
+  -moz-box-shadow: 0 0 5px 5px #aac6e9;
+  -webkit-box-shadow: 0 0 5px 5px#aac6e9;
+  box-shadow: 0 0 5px 5px #aac6e9; }
+
+.left-menu {
+  margin: 25px 10px;
+  padding: 5px; }
+
+.link {
+  width: 80%;
+  margin: auto;
+  font-weight: bold;
+  font-size: 12px;
+  height: 25px; }
+  .link a {
+    text-decoration: none; }
+  .link .add-icon {
+    background: url(images/add.png) no-repeat;
+    background-size: 24px 24px;
+    width: 32px;
+    height: 32px;
+    float: left; }
+  .link .add-text {
+    width: 60px;
+    line-height: 25px;
+    float: left; }
+  .link .view-icon {
+    background: url(images/view_list.png) no-repeat;
+    background-size: 24px 24px;
+    width: 32px;
+    height: 32px;
+    float: left; }
+  .link .cal-icon {
+    background: url(images/calender.png) no-repeat;
+    background-size: 24px 24px;
+    width: 32px;
+    height: 32px;
+    float: left; }
+  .link .project-icon {
+    background: url(images/project.png) no-repeat;
+    background-size: 24px 24px;
+    width: 32px;
+    height: 32px;
+    float: left; }
+  .link .color-icon {
+    background: url(images/color.png) no-repeat;
+    background-size: 24px 24px;
+    width: 32px;
+    height: 32px;
+    float: left; }
+
+.right {
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 5px;
+  background-color: none;
+  -moz-box-shadow: 0 0 5px 5px #aac6e9;
+  -webkit-box-shadow: 0 0 5px 5px#aac6e9;
+  box-shadow: 0 0 5px 5px #aac6e9;
+  position: absolute;
+  right: 15px;
+  left: 250px;
+  bottom: 25px;
+  top: 50px;
+  overflow: auto; }
+
+.starred {
+  right: 10px;
+  left: 10px;
+  top: 5px;
+  position: absolute; }
+  .starred .todo {
+    background: #cedff3;
+    border-radius: 5px;
+    width: 98%;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 2px;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 600;
+    z-index: 1000; }
+    .starred .todo .todo-row {
+      min-height: 40px;
+      border: 1px solid #77a4db;
+      border-radius: 5px;
+      z-index: 500; }
+      .starred .todo .todo-row .check {
+        width: 24px;
+        float: left;
+        padding: 10px 2px;
+        border-radius: 5px; }
+      .starred .todo .todo-row .star {
+        background: url("images/star-yellow.png") no-repeat;
+        width: 25px;
+        float: left;
+        height: 30px;
+        background-position: 50% 50%;
+        background-size: 20px;
+        padding: 4px 0; }
+      .starred .todo .todo-row .title {
+        width: 50%;
+        float: left;
+        margin-left: 10px;
+        color: #030303; }
+      .starred .todo .todo-row .project {
+        float: left;
+        margin-left: 10px;
+        margin-top: 0px;
+        line-height: 40px;
+        color: #77a4db; }
+      .starred .todo .todo-row .duedate {
+        margin-top: 0px;
+        line-height: 40px;
+        position: absolute;
+        right: 100px;
+        color: #030303; }
+      .starred .todo .todo-row .drag {
+        background: url("images/drag.png") no-repeat;
+        width: 20px;
+        height: 20px;
+        margin-top: 10px;
+        float: right;
+        margin-right: 5px;
+        cursor: move; }
+
+.details {
+  margin: 2px; }
+  .details .todo-detail {
+    height: 300px; }
+
+.todo-form {
+  height: 500px;
+  padding: 5px 10px; }
+
+.fancybox-skin {
+  background: #cedff3 !important; }
+
+.fields {
+  height: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: normal;
+  border: 2px solid #a5c4e9;
+  margin-top: 10px; }
+  .fields.title {
+    width: 100%; }
+  .fields.duedate {
+    width: 100%;
+    background: url("images/cal.png") no-repeat;
+    background-position: center right; }
+  .fields.description {
+    height: 300px;
+    width: 100%; }
+
+.name {
+  width: 100%;
+  margin-top: 10px;
+  float: left; }
+  .name .text {
+    width: 75px;
+    float: left; }
+  .name .project {
+    margin-left: 10px;
+    width: 60%;
+    height: 25px;
+    font-size: 16px; }
+
+.buttons {
+  width: 200px;
+  float: right;
+  padding: 5px;
+  height: 50px; }
+  .buttons .submit {
+    background: #57c615 url(images/check.png) no-repeat;
+    width: 70px;
+    height: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+    float: left;
+    line-height: 35PX;
+    background-position: 5px center;
+    padding: 0 10px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer; }
+  .buttons .cancel {
+    background: #ba1a1a url(images/cancel.png) no-repeat;
+    width: 70px;
+    height: 35px;
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+    line-height: 35PX;
+    background-position: 5px center;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin-left: 15px;
+    color: #fff;
+    cursor: pointer; }
+
+.rdoBtn {
+  width: 50px;
+  float: left;
+  position: relative; }
+  .rdoBtn .red {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 15;
+    background: red;
+    margin-left: 10px; }
+  .rdoBtn .yellow {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 15;
+    background: yellow;
+    margin-left: 10px; }
+  .rdoBtn .green {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 15;
+    background: green;
+    margin-left: 10px; }
+
+body {
+  background: #77a4db;
+  background-image: linear-gradient(bottom, white 30%, #77a4db 60%);
+  background-image: -o-linear-gradient(bottom, white 30%, #77a4db 60%);
+  background-image: -moz-linear-gradient(bottom, white 30%, #77a4db 60%);
+  background-image: -webkit-linear-gradient(bottom, white 30%, #77a4db 60%);
+  background-image: -ms-linear-gradient(bottom, white 30%, #77a4db 70%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=lighten($background,70%), endColorstr=$background ,GradientType=0 );
+  margin: 0px;
+  font-family: "Lucida Grande", Arial, Verdana; }

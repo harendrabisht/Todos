@@ -1,0 +1,16 @@
+@import 'variables';
+@import 'header';
+@import 'leftpanel';
+@import 'rightpanel';
+@import 'todoform';
+body{
+  background:$background;
+  background-image: linear-gradient(bottom, lighten($background,70%) 30%, $background 60%);
+  background-image: -o-linear-gradient(bottom, lighten($background,70%) 30%, $background 60%);
+  background-image: -moz-linear-gradient(bottom, lighten($background,70%) 30%, $background 60%);
+  background-image: -webkit-linear-gradient(bottom, lighten($background,70%) 30%, $background 60%);
+  background-image: -ms-linear-gradient(bottom, lighten($background,70%) 30%, $background 70%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=lighten($background,70%), endColorstr=$background ,GradientType=0 );
+  margin:0px;
+  font-family: "Lucida Grande", Arial, Verdana;
+}

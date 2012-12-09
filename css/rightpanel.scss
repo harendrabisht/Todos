@@ -1,0 +1,92 @@
+.right{
+  // width:85%;
+  margin:auto;
+  margin-top:50px;
+  border-radius:5px;
+  background-color:none;    
+  -moz-box-shadow: 0 0 5px 5px #aac6e9;
+  -webkit-box-shadow: 0 0 5px 5px#aac6e9;
+  box-shadow: 0 0 5px 5px #aac6e9; 
+  position: absolute;
+  right: 15px; 
+  left:250px;
+  bottom:25px;
+  top:50px;
+  overflow:auto;
+}
+.starred{
+  right: 10px; 
+  left:10px;
+  top:5px;
+
+  position: absolute;
+  .todo{
+    background:$popup-background;
+    border-radius:5px;
+    width:98%;
+    cursor:pointer;
+    margin:auto;
+    margin-top:2px;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 600;
+    z-index:1000;
+     .todo-row{
+      min-height:40px;
+      border:1px solid #77a4db;
+      border-radius:5px;
+      z-index:500;
+      .check{
+       width:24px;
+       float:left;
+       padding: 10px 2px;
+       border-radius:5px;
+      }
+      .star{
+       background:url('images/star-yellow.png') no-repeat;
+       width:25px;
+       float:left;
+       height:30px;
+       background-position: 50% 50%;
+       background-size: 20px;
+       padding: 4px 0;
+      }
+      .title{
+        width:50%;
+        float:left;
+        margin-left:10px;
+        color:#030303;
+      }
+      .project{
+        float:left;
+        margin-left:10px;
+        margin-top:0px;
+        line-height:40px;
+        color:$background;
+      }
+      .duedate{
+        margin-top:0px;
+        line-height:40px;      
+        position: absolute;
+        right: 100px;
+        color:#030303;
+      }
+      
+      .drag{
+        background:url('images/drag.png') no-repeat;
+        width:20px;
+        height:20px;
+        margin-top:10px;
+        float:right;
+        margin-right:5px;
+        cursor:move;
+      }
+    }
+   }
+}
+ .details{
+    margin:2px;
+    .todo-detail{
+       height:300px;
+    }
+  }

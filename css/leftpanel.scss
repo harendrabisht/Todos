@@ -1,0 +1,71 @@
+.left{
+  width:230px;
+  float:left;
+  margin-top:50px;
+}
+.left-panel{
+  width:90%;
+  margin:auto;
+  // border:5px solid #77a4db;
+  // height:800px;
+  border-radius:5px;
+  background-color:none;    
+  -moz-box-shadow: 0 0 5px 5px #aac6e9;
+  -webkit-box-shadow: 0 0 5px 5px#aac6e9;
+  box-shadow: 0 0 5px 5px #aac6e9;  
+}
+.left-menu{
+  margin:25px 10px;
+  padding:5px;
+}
+.link{
+  width:80%;
+  margin:auto;
+  font-weight:bold;
+  font-size:12px;
+  height:25px;
+  a{
+  text-decoration:none
+  }
+  .add-icon{
+  background:url(images/add.png) no-repeat;
+  background-size:24px 24px;
+  width:32px;
+  height:32px;
+  float:left;
+  }
+  .add-text{
+    width:60px;
+    line-height:25px;
+    float:left  
+  }
+  .view-icon{
+  background:url(images/view_list.png) no-repeat;
+  background-size:24px 24px;
+  width:32px;
+  height:32px;
+  float:left;
+  }
+  .cal-icon{
+  background:url(images/calender.png) no-repeat;
+  background-size:24px 24px;
+  width:32px;
+  height:32px;
+  float:left;
+  }
+  .project-icon{
+  background:url(images/project.png) no-repeat;
+  background-size:24px 24px;
+  width:32px;
+  height:32px;
+  float:left;
+  }
+  .color-icon{
+  background:url(images/color.png) no-repeat;
+  background-size:24px 24px;
+  width:32px;
+  height:32px;
+  float:left;
+  }
+}
+

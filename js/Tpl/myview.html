@@ -1,0 +1,24 @@
+<div class="todo" id="todo-row"  draggable="true">
+	<div class="todo-row">
+		<input type="hidden"  id="todoId"  value=<%= model.get('id')%>>
+		<% if(model.get('color')==1){ %>
+			<span class="check"style="background: red" >
+				<input type="checkbox" id="checked"/>
+			</span>
+		<% } else if(model.get('color')==2){ %>
+			<span class="check" style="background: yellow">
+				<input type="checkbox" id="checked"/>
+			</span>
+		<%} else if(model.get('color')==3){%>
+			<span class="check" style="background: green" >
+				<input type="checkbox" id="checked"/>
+			</span>
+		<%}%>
+		<span class="star"></span>
+		<span class="title"><%= model.get('title')%></span>
+		<span class="project"><%= model.get('project')%></span>
+		<span class="duedate"><%= model.get('duedate')%></span>
+		<span class="drag"></span>
+	</div>
+	<div class="details" id="detail"></div>
+</div>

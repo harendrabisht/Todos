@@ -1,0 +1,112 @@
+.todo-form{
+  height:$popup-height;
+  padding:5px 10px;
+  
+}
+.fancybox-skin{
+  background:$popup-background !important;
+}
+.fields{
+      height:30px;
+      padding:5px;
+      border-radius:5px;
+      font-size:16px;
+      font-weight:normal;
+      border:2px solid darken($popup-background , 10%);
+      margin-top:10px;
+    &.title{
+      width:100%;
+    }
+    &.duedate{
+      width:100%;
+      background:url('images/cal.png') no-repeat;
+      background-position: center right;
+    }
+    &.description{
+      height:300px;
+      width:100%;
+    }
+  }
+.name{
+  width:100%;
+  margin-top:10px;
+  float:left;
+  .text{
+    width:75px;
+    float:left;
+  }
+  .project{
+    margin-left:10px;
+    width:60%;
+    height:25px;
+    font-size:16px;
+  }
+}
+.buttons{
+  width:200px;
+  float:right;
+  padding:5px;
+  height:50px;
+  
+  .submit{
+    background:#57c615 url(images/check.png) no-repeat;
+    width:70px;
+    height:35px;
+    font-size:14px;
+    font-weight:bold;
+    text-align: right;
+    float: left;
+    line-height: 35PX;
+    background-position: 5px center;
+    padding: 0 10px;
+    border-radius:5px;
+    color:#fff;
+    cursor:pointer;
+  }
+  .cancel{
+    background:#ba1a1a url(images/cancel.png) no-repeat;
+    width:70px;
+    height:35px;
+    text-align: right;
+    font-size:14px;
+    font-weight:bold;
+    float: left;
+    line-height: 35PX;
+    background-position: 5px center;
+    padding: 0 10px;
+    border-radius:5px;
+    margin-left:15px;
+    color:#fff;
+    cursor:pointer;
+  }
+}
+.rdoBtn{
+  width:50px;
+  float:left;
+  position: relative;
+  .red{
+    width:15px;
+    height:15px;
+    position: absolute;
+    left: 15;
+    background:red;
+    margin-left:10px
+  }
+  .yellow{
+    width:15px;
+    height:15px;
+    position: absolute;
+    left: 15;
+    background:yellow;
+    margin-left:10px
+  }
+  .green{
+    width:15px;
+    height:15px;
+    position: absolute;
+    left: 15;
+    background:green;
+    margin-left:10px
+  }
+}
+

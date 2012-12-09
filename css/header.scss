@@ -1,0 +1,39 @@
+.header{
+  width:$header-width;
+  height:$header-height;
+  margin:auto;
+  background:url('images/header.png') repeat;
+  border-radius:0 0 $header-radius $header-radius;
+  border:1px solid $header-border;
+}
+.header-icon{
+  float:left;
+  width:100px;
+  height:$header-height;
+  background-image:url(images/todo.png);  background-repeat:no-repeat;
+}
+.header-exzeo{
+  position:absolute;
+  width:150px;
+  height:$header-height;
+  left:50%;
+  background-image:url(images/top_bar_logo.png);
+  background-repeat:no-repeat;
+}
+.header-right{
+  width:250px;
+  height:$header-height;
+  right:0px;
+  position:absolute;
+}
+.header-name{
+  height: $header-height;
+  line-height: $header-height;
+  width: 50px;
+  position: absolute;
+  left: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:12px;
+  font-weight:bold;
+  color:#b3810d
+}

@@ -1,0 +1,73 @@
+<head>
+<!-- 	<script src="js/cal/js/jscal2.js"></script> -->
+	<script src="js/cal/js/lang/en.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/cal/css/jscal2.css" />
+	<link rel="stylesheet" type="text/css" href="js/cal/css/border-radius.css" />
+	<link rel="stylesheet" type="text/css" href="js/cal/css/steel/steel.css" />
+<!-- 	<script type="text/javascript" src="js/fancybox/jquery.fancybox.js?v=2.1.3"></script> -->
+	<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css?v=2.1.2" media="screen" />
+</head>
+<div class="left-panel">
+	<div class="calender" id="calender"></div>
+	<div class="left-menu" id="menu">
+		<div class="link" >
+			<a id="add-todo" href="#todoForm"> <span class="add-icon"></span> <span class="add-text">Add Todo</span> </a>
+		</div>
+		<br/>
+		<div class="link">
+			<a href=""> <span class="view-icon"></span> <span class="add-text">My View</span> </a>
+		</div>
+		<br/>
+		<div class="link">
+			<a href=""> <span class="cal-icon"></span> <span class="add-text">Date View</span> </a>
+		</div>
+		<br/>
+		<div class="link">
+			<a href=""> <span class="project-icon"></span> <span class="add-text">Project</span> </a>
+		</div>
+		<br/>
+		<div class="link">
+			<a href=""> <span class="color-icon"></span> <span class="add-text">My Color</span> </a>
+		</div>
+	</div>
+</div>
+
+<div id="todoForm" style="width:400px;display: none;">
+
+	<form id="todo">
+		<div class="todo-form">
+			<input type="text" placeholder="title" id="title" class="fields title" name="title"/>
+			<input type="text" id="duedate" placeholder="Due Date" class="fields duedate"/>
+<!-- 			<span id="cal" class="fields cal"></span> -->
+			<span class="name"><span class="text">Project:</span>
+				<select class="project" id="project">
+					<option value="volvo">Volvo</option>
+					<option value="saab">Saab</option>
+					<option value="mercedes">Mercedes</option>
+					<option value="audi">Audi</option>
+				</select></span>
+			<span class="name"><span class="text">Priority:</span>
+				<input type="radio" name="priority" value=1 id="priority"/>
+				Low
+				<input type="radio" name="priority" value=2 checked="checked"/>
+				Medium
+				<input type="radio" name="priority" value=3 />
+				High </span>
+			<br/>
+			<span class="name"><span class="text">Color:</span> <span class="rdoBtn">
+					<input type="radio" name="color" value=1 id="color" />
+					<span class="red"> </span></span> <span class="rdoBtn">
+					<input type="radio" name="color" value=2 checked="checked"/>
+					<span class="yellow"> </span></span> <span class="rdoBtn" >
+					<input type="radio" name="color" value=3 >
+					<span class="green"> </span></span> </span>
+			<textarea class="fields description" id="description" placeholder="Description"></textarea>						
+
+		</div>
+		<div class="buttons">
+			<span class="submit" id="submit" >Submit</span>
+			<span class="cancel" id="cancel" onclick="$.fancybox.close();">Cancel</span>
+		</div>
+	</form>
+
+</div>
