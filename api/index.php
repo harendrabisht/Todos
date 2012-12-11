@@ -53,11 +53,11 @@ function getAllTodo() {
   }
 }
 function getConnection() {
-    $host = "118.139.179.49";
+    $host = "localhost";
     //database location
-    $user = "taskmanager";
+    $user = "root";
     //database username
-    $pass = "Task@1234";
+    $pass = "";
     //database password
     $db_name = "taskmanager";
     //database name

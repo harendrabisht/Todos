@@ -1,7 +1,7 @@
 <?php
     $host = "localhost"; //database location
-    $user = "taskmanager"; //database username
-    $pass = "Task@1234"; //database password
+    $user = "root"; //database username
+    $pass = ""; //database password
     $db_name = "taskmanager"; //database name
     //database connection
     $link = mysql_connect($host, $user, $pass);
